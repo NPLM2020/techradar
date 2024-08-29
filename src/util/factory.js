@@ -7,6 +7,8 @@ const _ = {
   each: require('lodash/each'),
 }
 
+const radarPath = 'files/techradar.json'
+
 const InputSanitizer = require('./inputSanitizer')
 const Radar = require('../models/radar')
 const Quadrant = require('../models/quadrant')
@@ -327,8 +329,7 @@ const Factory = function () {
     //const domainName = DomainName(window.location.search.substring(1))
     //console.log(window.location.href + '/?' + window.location.href + '/files/techradar.json')
     //console.log(domainName + '/files/techradar.json')
-    const paramId = window.location.href + '/files/techradar.json'
-    console.log(paramId)
+    const paramId = window.location.href + radarPath
     sheet = JSONFile(paramId)
     sheet.init().build()
 
