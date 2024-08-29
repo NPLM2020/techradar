@@ -7,6 +7,7 @@ const args = require('yargs').argv
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const env = args.envFile
 if (env) {
@@ -34,6 +35,11 @@ const plugins = [
     'process.env.QUADRANTS': JSON.stringify(process.env.QUADRANTS),
     'process.env.ADOBE_LAUNCH_SCRIPT_URL': JSON.stringify(process.env.ADOBE_LAUNCH_SCRIPT_URL),
   }),
+  new CopyWebpackPlugin({
+    patterns: [
+      { from: path.resolve(__dirname, 'src/files'), to: 'files' },
+    ],
+  })
 ]
 
 module.exports = {
