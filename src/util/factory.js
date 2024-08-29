@@ -324,8 +324,8 @@ const Factory = function () {
       }
     })
 
-    //const domainName = DomainName(window.location.search.substring(1))
-    console.log(window.location.href + '?' + window.location.href + '/files/techradar.json')
+    const domainName = DomainName(window.location.search.substring(1))
+    console.log(window.location.href + '/?' + window.location.href + '/files/techradar.json')
     //sheet = JSONFile(window.location.href + '?' + window.location.href + '/files/techradar.json')
     //sheet.init().build()
 
@@ -360,6 +360,7 @@ const Factory = function () {
 
       setDocumentTitle()
     }
+  }
 
   return self
 }
