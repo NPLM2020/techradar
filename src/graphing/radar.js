@@ -14,7 +14,7 @@ const { renderBanner } = require('./components/banner')
 const { renderQuadrantSubnav } = require('./components/quadrantSubnav')
 const { renderSearch } = require('./components/search')
 const { renderAlternativeRadars } = require('./components/alternativeRadars')
-const { renderButtons } = require('./components/buttons')
+//const { renderButtons } = require('./components/buttons')
 const {
   renderRadarQuadrants,
   renderMobileView,
@@ -652,10 +652,7 @@ const Radar = function (size, radar) {
       .attr('class', 'footer-content')
       .append('p')
       .html(
-        'Powered by <a href="https://www.thoughtworks.com"> Thoughtworks</a>. ' +
-          'By using this service you agree to <a href="https://www.thoughtworks.com/radar/tos">Thoughtworks\' terms of use</a>. ' +
-          'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. ' +
-          'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.',
+        'This is a technology radar of the Xsolla Account domain. The application is a fork of the open-source project powered by <a href="https://www.thoughtworks.com"> Thoughtworks</a>.',
       )
   }
 
@@ -780,7 +777,7 @@ const Radar = function (size, radar) {
       renderSearch(radarHeader, quadrants)
       renderAlternativeRadars(radarFooter, alternatives, currentSheet)
       renderQuadrantTables(quadrants, rings)
-      renderButtons(radarFooter)
+     //renderButtons(radarFooter)
 
       const landingPageElements = document.querySelectorAll('main .home-page')
       landingPageElements.forEach((elem) => {

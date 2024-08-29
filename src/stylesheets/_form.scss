@@ -10,14 +10,25 @@
   .input-sheet__logo {
     text-align: center;
     padding-bottom: 40px;
-    a {
-      border-bottom: none;
 
-      img {
-        width: 200px;
+    div {
+      align-items: center;
+      height: 60px;
+      a {
+        border-bottom: none;
+
+        img {
+          height: 60px;
+          width: 60px;
+        }
+      }
+      span {
+        margin-left: 10px;
       }
     }
+
   }
+
 
   .radar-footer {
     padding-top: 200px;
