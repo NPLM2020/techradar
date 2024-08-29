@@ -327,7 +327,9 @@ const Factory = function () {
     const domainName = DomainName(window.location.search.substring(1))
     //console.log(window.location.href + '/?' + window.location.href + '/files/techradar.json')
     //console.log(domainName + '/files/techradar.json')
-    sheet = JSONFile('https://' + domainName + '/files/techradar.json')
+    const paramId = 'https://' + domainName + '/files/techradar.json'
+    console.log(paramId)
+    sheet = JSONFile(paramId)
     sheet.init().build()
 
    /*const paramId = getDocumentOrSheetId()
