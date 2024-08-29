@@ -1,0 +1,81 @@
+[
+  {
+    "name": "GitLab",
+    "ring": "adopt",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": "GitLab is used as a default version control based on Git. The group for the Xsolla Account domain projects: <a href=\"https://gitlab.loc/babka\">https://gitlab.loc/babka</a>"
+  },
+  {
+    "name": "Atlassian Confluence",
+    "ring": "adopt",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": "Confluence is used as a primary tool for storing engeneering and business documentation. The common Xsolla Account engeneering and architectural documents are stored here: <a href=\"https://xsolla.atlassian.net/wiki/spaces/XAE/overview\">https://xsolla.atlassian.net/wiki/spaces/XAE/overview</a>"
+  },
+  {
+    "name": "Atlassian Jira",
+    "ring": "adopt",
+    "quadrant": "tools",
+    "isNew": "FALSE",
+    "description": "Jira is used for task management and planning."
+  },
+  {
+    "name": "RabbitMQ",
+    "ring": "adopt",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "description": "Default message broker."
+  },
+  {
+    "name": "Kanban",
+    "ring": "adopt",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "status": "Moved in",
+    "description": "Currently, Kanban is adopted as a primary practice for task management and development."
+  },
+  {
+    "name": "Scrum",
+    "ring": "hold",
+    "quadrant": "techniques",
+    "isNew": "FALSE",
+    "status": "Moved out",
+    "description": "Scrum is not used anymore because of the transition to Kanban."
+  },
+  {
+    "name": "Golang",
+    "ring": "adopt",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "Golang is a single language for backend development."
+  },
+  {
+    "name": "Temporal",
+    "ring": "trial",
+    "quadrant": "platforms",
+    "isNew": "TRUE",
+    "description": "We pilot Temporal as a tool for orchestration and scheduling."
+  },
+  {
+    "name": "IcePanel",
+    "ring": "assess",
+    "quadrant": "tools",
+    "isNew": "TRUE",
+    "description": "We are considering IcePanel as a tool for architecture modeling. The demo project: <a href=\"https://s.icepanel.io/4M74u6Ui5qTBms/YHRj\">https://s.icepanel.io/4M74u6Ui5qTBms/YHRj</a>"
+  },
+  {
+    "name": "JetBrains GoLand",
+    "ring": "adopt",
+    "quadrant": "tools",
+    "isNew": "False",
+    "description": "GoLand is used as a default IDE for applications written on Golang."
+  },
+  {
+    "name": "Rooster",
+    "ring": "adopt",
+    "quadrant": "languages & frameworks",
+    "isNew": "FALSE",
+    "description": "Rooster is an in-house framework for development microservices on Golang. The sources and documentation are here: <a href=\"https://gitlab.loc/platform/rooster\">https://gitlab.loc/platform/rooster</a>"
+  }
+]
