@@ -325,14 +325,16 @@ const Factory = function () {
     })
 
     //const domainName = DomainName(window.location.search.substring(1))
-    sheet = JSONFile(window.location.href + '?' + window.location.href + '/files/techradar.json')
-    sheet.init().build(window.location)
+    console.log(window.location.href + '?' + window.location.href + '/files/techradar.json')
+    //sheet = JSONFile(window.location.href + '?' + window.location.href + '/files/techradar.json')
+    //sheet.init().build()
 
-   /*const paramId = getDocumentOrSheetId()
+   const paramId = getDocumentOrSheetId()
     if (paramId && paramId.endsWith('.csv')) {
       sheet = CSVDocument(paramId)
       sheet.init().build()
     } else if (paramId && paramId.endsWith('.json')) {
+      console.log(paramId)
       sheet = JSONFile(paramId)
       sheet.init().build()
     } else if (domainName && domainName.endsWith('google.com') && paramId) {
@@ -357,8 +359,7 @@ const Factory = function () {
       }
 
       setDocumentTitle()
-    }*/
-  }
+    }
 
   return self
 }
